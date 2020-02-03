@@ -1,0 +1,135 @@
+html {
+	font-family: 'Roboto', sans-serif;
+}
+.p-0 {
+	padding: 0;
+}
+.mb-0 {
+	margin-bottom: 0;
+}
+/*  navbar  */
+.navbar-light .navbar-nav .nav-link {
+	color: #707070;
+	font-weight: 700;
+	position: relative;
+}
+.navbar-light .navbar-nav .nav-link.active:after {
+	content: "";
+	background: #02a4ef;
+	position: absolute;
+	bottom: 0;
+	left: 38%;
+	top: 42px;
+	height: 18%;
+	width: 25%;
+}
+.navbar-light .navbar-nav .nav-link.active {
+	color: black;
+	*/: 500;
+}
+.fixed-top {
+	background-color: #ededed;
+}
+/*  end-navbar  */
+
+/* EVENT.HTML START*/
+.title_text {
+	color: #707070;
+	padding-top: 2%;
+	font-weight: 700;
+	font-size: 9vh;
+}
+
+.subtitle_text {
+	color: #969696;
+	font-weight: 300;
+	font-size: 8vh;
+	margin-top: 4%;
+}
+.form-control:focus {
+	box-shadow: none;
+}
+.regno {
+	margin-top: 10%;
+	border: 0px;
+	border-bottom: 2px solid #bfbfbf;
+	border-radius: 0px;
+}
+.download a {
+	text-decoration: none;
+}
+.events_btn {
+	background-color: #00bfff;
+	margin-top: 0px;
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+	line-height: 40px;
+	border: 0;
+	border-radius: 40px;
+	box-shadow: rgba(0, 191, 255, 0) 0 7px 5px;
+	min-width: 35px;
+	padding: 0 25px;
+	margin-top: 3%;
+}
+.events_btn:hover {
+	background-color: #bfbfbf;
+}
+
+::-webkit-input-placeholder {
+	text-align: center;
+	color: #bfbfbf;
+	font-weight: 200;
+	font-size: 3vh;
+}
+
+:-moz-placeholder {
+	/* Firefox 18- */
+	text-align: center;
+	color: #bfbfbf;
+	font-weight: 200;
+	font-size: 3vh;
+}
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	text-align: center;
+	color: #bfbfbf;
+	font-weight: 200;
+	font-size: 3vh;
+}
+
+:-ms-input-placeholder {
+	text-align: center;
+	color: #bfbfbf;
+	font-weight: 200;
+	font-size: 3vh;
+}
+/* EVENT.HTML END */
+
+.page-footer {
+	background-color: #ededed;
+	max-width: 100%;
+	margin-top: 27vh;
+}
+.footer-text {
+	text-align: center;
+	color: #707070;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.page-footer img {
+	height: 30px;
+	width: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#errorlink {
+	color: red;
+}
+#errorlink,
+#datalink,
+.progress {
+	visibility: hidden;
+}
