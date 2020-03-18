@@ -186,3 +186,6 @@ html {
 	color: white;
 	opacity: 1; /* Firefox */
 }
+.darkmode-toggle {
+	z-index: 100;
+}
