@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <title>Events - Microsoft Student Partners Club SRM</title>
+<link rel="icon" href="img/logo-blue.svg" type="image type" />
 
 <head>
 	<meta charset="UTF-8">
@@ -26,10 +27,12 @@
 	<!-- bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css\events.css"/>
+	<link rel="stylesheet" type="text/css" href="css\events.css" />
+	<!-- <link rel="stylesheet" href="css\darkmode.scss"> -->
 </head>
 
-<body class="events_body">
+<body class="events_body" id="body">
+	<!-- <a class="float" name="dark_light" onclick="toggleDarkLight()" style="padding-top: 15px;" title="Toggle dark/light mode">🌛</a> -->
 	<!-- start navabr -->
 	<nav class="navbar navbar-expand-lg navbar-light  fixed-top">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -55,7 +58,7 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h1 class="text-center title_text" style="padding-top: 60px;">UPCOMING EVENTS</h1>
+		<!-- <h1 class="text-center title_text" style="padding-top: 60px;">UPCOMING EVENTS</h1>
 		<div class="card up_card" style="margin-top: 70px;">
 			<div class="card-body">
 				<h5 class="title_uptext">MARCH BYTES</h5>
@@ -63,8 +66,12 @@
 					<div class="col-md-8 order-2 order-md-1">
 						<div class="card bg-upcard" style="height:97%;">
 							<div class="card-body">
-								<p class="card-text card_body_text event-p">Join us on the 14th of March, 2020 for an amazing, app-solutely fun, beginner friendly hands-on workshop on Application Development using Android Studio.<br>Nurture 1.0 is being conducted by a SIIC born startup- Neur Industries on 15th March, 2020. Join in to experience the power of AR with Microsoft HoloLens with modules on Artificial intelligence and space technology being developed just for you.
-								</p>
+								<p class="card-text card_body_text event-p">Join us on the 14th of March, 2020 for an
+									amazing, app-solutely fun, beginner friendly hands-on workshop on Application
+									Development using Android Studio.<br>Nurture 1.0 is being conducted by a SIIC born
+									startup- Neur Industries on 15th March, 2020. Join in to experience the power of AR
+									with Microsoft HoloLens with modules on Artificial intelligence and space technology
+									being developed just for you.</p>
 								<div class="d-flex justify-content-center" style="height: 20px;">
 									<button type="button" class="btn btn-primary upevents_btn"
 										onclick="window.location.href = 'https://msclubsrm.in/marchbytes.html'">Register
@@ -80,7 +87,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<h1 class="text-center title_text" style="margin-top:8%;">PREVIOUS EVENTS</h1>
 	</div>
 	<div class="bg-event">
@@ -92,14 +99,46 @@
 				<div class="col-sm-12 col-md-6">
 					<div class="card event_card card_body_text" id="block">
 						<div class="card-body card-bod">
-							<img class="mx-auto d-block" src="img\big-data.png" height="100px;">
-							<h5 class="card-title text-center title-pad">BIG DATA ANALYTICS AND PRODUCT MODELING</h5>
-							<h6 class="card-subtitle mb-2 text-muted text-center date-pad">1<sup>st</sup> February, 2020
+							<img class="mx-auto d-block" src="android1.png" height="100px;">
+							<h5 class="card-title text-center title-pad">APPLICATION DEVELOPMENT</h5>
+							<h6 class="card-subtitle mb-2 text-center date-pad">14<sup>th</sup> March, 2020
 							</h6>
-							<p class="card-text text-center">A trailblazing workshop which took on Data Science in a way like never before. Starting from introduction and taking it all the way to numpy, pandas and visualization with Seaborn. We did it all!</p>
+							<p class="card-text text-center">App-solutely fun, beginner friendly hands-on workshop on Application Development using Android Studio.</p>
 							<div class="d-flex justify-content-center">
 								<button type="button" class="btn btn-primary events_btn_img_stda"
-								onclick="window.location.href = 'bda.html';">Certificates</button>	
+									onclick="window.location.href = 'appdev.html';">Certificates</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text" id="block">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="vr2.png" height="100px;">
+							<h5 class="card-title text-center title-pad">NURTURE 1.0</h5>
+							<h6 class="card-subtitle mb-2 text-center date-pad">15<sup>th</sup> March, 2020
+							</h6>
+							<p class="card-text text-center">Focused on the very latest- augmented and virtual realities, conducted in association with Neur industries.</p>
+							<div class="d-flex justify-content-center">
+								<button type="button" class="btn btn-primary events_btn_img_stda"
+									onclick="window.location.href = 'nurture.html';">Certificates</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text" id="block">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="img\big-data.png" height="100px;">
+							<h5 class="card-title text-center title-pad">BIG DATA ANALYTICS AND PRODUCT MODELING</h5>
+							<h6 class="card-subtitle mb-2 text-center date-pad">1<sup>st</sup> February, 2020
+							</h6>
+							<p class="card-text text-center">A trailblazing workshop which took on Data Science in a way
+								like never before. Starting from introduction and taking it all the way to numpy, pandas
+								and visualization with Seaborn. We did it all!</p>
+							<div class="d-flex justify-content-center">
+								<button type="button" class="btn btn-primary events_btn_img_stda"
+									onclick="window.location.href = 'bda.html';">Certificates</button>
 							</div>
 						</div>
 					</div>
@@ -109,7 +148,7 @@
 						<div class="card-body card-bod">
 							<img class="mx-auto d-block" src="img\Bitcoin vector.svg">
 							<h5 class="card-title text-center title-pad">BLOCKCHAIN & DECENTRAILZED AI WORKSHOP</h5>
-							<h6 class="card-subtitle mb-2 text-muted text-center date-pad">13<sup>th</sup> October, 2019
+							<h6 class="card-subtitle mb-2    text-center date-pad">13<sup>th</sup> October, 2019
 							</h6>
 							<p class="card-text text-center">Taken by Mr. Saksham Kukreja (Blockchain, AI, IoT and Cloud
 								Researcher), this workshop focused on the advantages of Decentralized Blockchain and its
@@ -126,7 +165,7 @@
 						<div class="card-body card-bod">
 							<img class="mx-auto d-block" src="img\Azure vector.svg">
 							<h5 class="card-title  text-center title-pad">INTRODUCTON TO AZURE DEVOPS</h5>
-							<h6 class="card-subtitle mb-2 text-muted text-center date-pad">13<sup>th</sup> October, 2019
+							<h6 class="card-subtitle mb-2   text-center date-pad">13<sup>th</sup> October, 2019
 							</h6>
 							<p class="card-text text-center">A Workshop on Azure DevOps, taken by Mr.Abdul Rasheed Feroz
 								Khan, Microsoft Most Valuable Professional.</p>
@@ -142,7 +181,7 @@
 						<div class="card-body card-bod">
 							<img class="mx-auto d-block" src="img\App Security Vector.svg">
 							<h5 class="card-title  text-center title-pad">APPLICATION SECURITY & ETHICAL HACKING</h5>
-							<h6 class="card-subtitle mb-2 text-muted text-center date-pad">12<sup>th</sup> October, 2019
+							<h6 class="card-subtitle mb-2    text-center date-pad">12<sup>th</sup> October, 2019
 							</h6>
 							<p class="card-text text-center">Taken by Mr. Shrey Gupta, Bug Bounty Hunter, complete
 								hands-on with Burp Suite.</p>
@@ -158,13 +197,13 @@
 						<div class="card-body card-bod">
 							<img class="mx-auto d-block" src="img\Code struck Vector.svg">
 							<h5 class="card-title  text-center title-pad">CODESTRUCK 1.0</h5>
-							<h6 class="card-subtitle mb-2 text-muted text-center date-pad">17-18<sup>th</sup> August,
+							<h6 class="card-subtitle mb-2    text-center date-pad">17-18<sup>th</sup> August,
 								2019</h6>
 							<p class="card-text text-center">The first edition of CodeStruck witnessed 1000+ students
 								competiting with each other in online competitive coding.</p>
 							<div class="d-flex justify-content-center">
 								<button type="button" class="btn btn-primary events_btn_img_stda"
-								onclick="window.location.href = 'gallery.html#codestruck';">Images</button>	
+									onclick="window.location.href = 'gallery.html#codestruck';">Images</button>
 							</div>
 						</div>
 					</div>
@@ -174,7 +213,7 @@
 						<div class="card-body card-bod">
 							<img class="mx-auto d-block" src="img\DS ML vector.svg">
 							<h5 class="card-title  text-center title-pad">DATA SCIENCE AND MACHINE LEARNING BASIC</h5>
-							<h6 class="card-subtitle mb-2 text-muted text-center date-pad">02<sup>th</sup> April, 2019
+							<h6 class="card-subtitle mb-2    text-center date-pad">02<sup>th</sup> April, 2019
 							</h6>
 							<p class="card-text text-center">Data Science and ML are two intertwined topics that have
 								really caught the imagination of tech enthusiasts.</p>
@@ -190,7 +229,7 @@
 						<div class="card-body card-bod">
 							<img class="mx-auto d-block" src="img\interaction vect.svg">
 							<h5 class="card-title  text-center title-pad">INTERACTIVE CODING LEARNING WORKSHOP</h5>
-							<h6 class="card-subtitle mb-2 text-muted text-center date-pad">06<sup>th</sup> October, 2018
+							<h6 class="card-subtitle mb-2    text-center date-pad">06<sup>th</sup> October, 2018
 							</h6>
 							<p class="card-text text-center">Join us to kick-start your dev journey from scratch to pro.
 								Every participant will be provided with a subscription to enable them to learn even
@@ -207,7 +246,7 @@
 						<div class="card-body card-bod">
 							<img class="mx-auto d-block" src="img\MSI vector.svg">
 							<h5 class="card-title  text-center title-pad">MSI CAMPUS MEET</h5>
-							<h6 class="card-subtitle mb-2 text-muted text-center date-pad">09<sup>th</sup> September,
+							<h6 class="card-subtitle mb-2    text-center date-pad">09<sup>th</sup> September,
 								2017</h6>
 							<p class="card-text text-center">Microsoft Student Partners Club, SRM University hosts MSI
 								Gaming on 9th September at MBA Seminar Hall from 11 AM to 3 PM.</p>
@@ -223,7 +262,7 @@
 						<div class="card-body card-bod">
 							<img class="mx-auto d-block" src="img\talk vector.svg">
 							<h5 class="card-title  text-center title-pad">IMAGINE TALKS</h5>
-							<h6 class="card-subtitle mb-2 text-muted text-center date-pad">02<sup>th</sup> September,
+							<h6 class="card-subtitle mb-2    text-center date-pad">02<sup>th</sup> September,
 								2017</h6>
 							<p class="card-text text-center"></p>
 							<div class="d-flex justify-content-center">
@@ -255,6 +294,11 @@
 	</footer>
 
 	<!-- bootstrap -->
+	<script src="js\DARKMODE.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+	<script>
+		new Darkmode().showWidget();
+	</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>

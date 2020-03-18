@@ -170,3 +170,80 @@ function dod3() {
 			console.log('OOPS!');
 		});
 }
+
+//App Development
+function dod4() {
+	document.getElementById('progress').style.visibility = 'visible';
+	var storageRef = storage.ref();
+	var regno = document.getElementById('regid').value;
+	if (regno.length < 5) {
+		console.log(regno.length);
+		document.getElementById('datalink').innerHTML = '';
+		document.getElementById('datalink').style.visibility = 'hidden';
+		document.getElementById('errorlink').innerHTML = 'Please enter your email correctly';
+		document.getElementById('errorlink').style.visibility = 'visible';
+		document.getElementById('progress').style.visibility = 'hidden';
+		return;
+	}
+	var filepath = 'AppDev//' + regno + '.pdf';
+	var pathReference = storage.ref(filepath);
+
+	storageRef
+		.child(filepath)
+		.getDownloadURL()
+		.then(function(url) {
+			document.getElementById('datalink').innerHTML = 'Download Certificate';
+			document.getElementById('datalink').href = url;
+			document.getElementById('datalink').style.visibility = 'visible';
+			document.getElementById('errorlink').style.visibility = 'hidden';
+			document.getElementById('progress').style.visibility = 'hidden';
+			console.log('FOUND IT BABY!');
+		})
+		.catch(function(error) {
+			document.getElementById('datalink').innerHTML = '';
+			document.getElementById('datalink').style.visibility = 'hidden';
+			document.getElementById('errorlink').innerHTML =
+				"Hey! We couldn't find any certificate with this email. Make sure you have entered it correctly. Contact us if you think it's our fault.";
+			document.getElementById('errorlink').style.visibility = 'visible';
+			document.getElementById('progress').style.visibility = 'hidden';
+			console.log('OOPS!');
+		});
+}
+//Nurture 1.0
+function dod5() {
+	document.getElementById('progress').style.visibility = 'visible';
+	var storageRef = storage.ref();
+	var regno = document.getElementById('regid').value;
+	if (regno.length < 5) {
+		console.log(regno.length);
+		document.getElementById('datalink').innerHTML = '';
+		document.getElementById('datalink').style.visibility = 'hidden';
+		document.getElementById('errorlink').innerHTML = 'Please enter your email correctly';
+		document.getElementById('errorlink').style.visibility = 'visible';
+		document.getElementById('progress').style.visibility = 'hidden';
+		return;
+	}
+	var filepath = 'Nurture//' + regno + '.pdf';
+	var pathReference = storage.ref(filepath);
+
+	storageRef
+		.child(filepath)
+		.getDownloadURL()
+		.then(function(url) {
+			document.getElementById('datalink').innerHTML = 'Download Certificate';
+			document.getElementById('datalink').href = url;
+			document.getElementById('datalink').style.visibility = 'visible';
+			document.getElementById('errorlink').style.visibility = 'hidden';
+			document.getElementById('progress').style.visibility = 'hidden';
+			console.log('FOUND IT BABY!');
+		})
+		.catch(function(error) {
+			document.getElementById('datalink').innerHTML = '';
+			document.getElementById('datalink').style.visibility = 'hidden';
+			document.getElementById('errorlink').innerHTML =
+				"Hey! We couldn't find any certificate with this email. Make sure you have entered it correctly. Contact us if you think it's our fault.";
+			document.getElementById('errorlink').style.visibility = 'visible';
+			document.getElementById('progress').style.visibility = 'hidden';
+			console.log('OOPS!');
+		});
+}

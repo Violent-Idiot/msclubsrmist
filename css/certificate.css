@@ -132,4 +132,57 @@ html {
 #datalink,
 .progress {
 	visibility: hidden;
+	mix-blend-mode: lighten;
+}
+/* Darkmode CSS */
+
+.darkmode-toggle::after {
+	content: "🌓";
+}
+
+.darkmode--activated .page-footer {
+	background-color: rgb(59, 59, 59);
+	mix-blend-mode: difference;
+}
+
+.darkmode--activated .footer-text {
+	color: #e6e6e6;
+}
+.darkmode--activated .page-footer {
+	background-color: #333333;
+}
+
+.darkmode--activated .navbar {
+	background-color: #333333;
+}
+
+.darkmode--activated .nav-link {
+	color: white !important;
+}
+.darkmode--activated .title_text {
+	color: white;
+	mix-blend-mode: lighten;
+}
+.darkmode--activated .subtitle_text {
+	color: white;
+	mix-blend-mode: lighten;
+}
+
+.darkmode-layer {
+	background: #4d4d4d !important;
+	mix-blend-mode: normal !important;
+}
+
+.darkmode--activated .regno {
+	mix-blend-mode: difference;
+	background: none;
+}
+.darkmode--activated .events_btn {
+	mix-blend-mode: lighten;
+}
+
+.darkmode--activated ::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
 }

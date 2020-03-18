@@ -51,6 +51,77 @@ html {
 }
 /*  end-navbar  */
 /* EVENT.HTML START*/
+
+.darkmode--activated .card-title {
+	color: #e6e6e6;
+}
+
+.darkmode--activated .title_text {
+	color: white;
+	mix-blend-mode: lighten;
+}
+
+.darkmode--activated .card_body_text {
+	color: white;
+}
+
+.darkmode--activated .up_card {
+	background-color: #333333;
+}
+
+.darkmode--activated .bg-upcard {
+	background-color: #404040;
+}
+
+.darkmode--activated .title_uptext {
+	color: #e6e6e6;
+}
+
+.darkmode--activated .page-footer {
+	background-color: rgb(59, 59, 59);
+	mix-blend-mode: difference;
+}
+
+.darkmode--activated .footer-text {
+	color: #e6e6e6;
+}
+
+.darkmode--activated .card-subtitle {
+	color: #e6e6e6;
+}
+
+.darkmode--activated .float {
+	background-color: grey;
+}
+
+.darkmode--activated .page-footer {
+	background-color: #333333;
+}
+
+.darkmode--activated .navbar {
+	background-color: #333333;
+}
+
+.darkmode--activated .nav-link {
+	color: white !important;
+}
+
+.darkmode--activated p,
+.darkmode--activated h1,
+.darkmode--activated h5 {
+	color: white;
+}
+
+.darkmode--activated {
+	background: #262626 !important;
+	/* mix-blend-mode: lighten; */
+}
+
+.darkmode-layer {
+	background: #4d4d4d !important;
+	mix-blend-mode: normal !important;
+}
+
 .title_text {
 	color: #707070;
 	padding-top: 2%;
@@ -71,7 +142,7 @@ html {
 	text-align: justify;
 }
 
-.title-pad {
+.light-mode .title-pad {
 	padding-top: 2%;
 	position: relative;
 	bottom: 10%;
@@ -207,4 +278,30 @@ html {
 	margin-top: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+.float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #ffb84d;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	cursor: pointer;
+	opacity: 1;
+	opacity: inherit;
+}
+
+.my-float {
+	margin-top: 22px;
+}
+
+.darkmode-toggle::after {
+	content: "🌓";
+}
+.darkmode-toggle {
+	z-index: 100;
 }

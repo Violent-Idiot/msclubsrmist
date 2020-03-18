@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  
-  <title>MSPC SRM - Microsoft Student Partners Club SRM</title>  
+
+  <title>MSPC SRM - Microsoft Student Partners Club SRM</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130200243-3"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -21,7 +21,7 @@
 		</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description"
+	<meta name="description" 
 		content="The Official Website for Microsoft Student Partners Club, SRMIST. We are a technical campus club, established in 2014 under the department of CSE at SRM Chennai.">
   <link rel="icon" href="img/logo-blue.svg" type="image type"/>
    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
@@ -29,10 +29,9 @@
    <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="css/index.css" />
-
   </script>
  </head>
-<body>
+<body id="body">
 
 <!-- start navabr -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -59,10 +58,12 @@
 </nav>
 <!-- end navbar -->
 
-<!-- start first div -->
 <div class="first-div">
   <div class="centered-logo">
-    <img src="img/logo-blue.svg" alt="our logo">
+    <!-- <img src="img\logo-blue.svg" class="lm" id="light-mode" alt="our logo">
+    <img src="img\dark_svg\Logo.svg" class="dm" id="dark-mode" alt="our logo"> -->
+    <img src="img\logo-blue.svg" id="logo_main" class="lm1" alt="our logo">
+    <!-- <img src="img\dark_svg\Logo.svg" class="dm1" alt="our logo"> -->
   </div>
   <div class="centered1">
     <span>Welcome</span>
@@ -80,7 +81,10 @@
     <div class="row ">
         <div class="col-md-5 col-sm-12 ">
             <div class="leftside container">
-                <img class="img-fluid minpic" src="img/about_us.svg" alt="About Us">
+                <!-- <img class="img-fluid dm" src="img\dark_svg\About Us.svg" id="dark-mode" style="display: none;"alt="About Us"> -->
+                <img class="img-fluid minpic lm" src="img/about_us.svg" id="test" alt="About Us">
+                <!-- <img class="img-fluid minpic dm" src="img\dark_svg\About Us.svg" id="test" alt="About Us"> -->
+                <!-- <img class="img-fluid dm" src="img\dark_svg\About Us.svg" id="dark-mode" alt="About Us"> -->
             </div>
 
         </div>
@@ -96,27 +100,28 @@
 
 <!-- start third div -->
 <div class="third-div">
-    <div class="div3head">
-        <p>Our Domains</p>
+    <div >
+        <p class="div3head">Our Domains</p>
     </div>
     <div class="domains">
         <div class="div3img text-center">
-        <img src="img/Home Page Domain Vectors.svg" class="img-fluid mx-auto d-block" alt="Our Domains">
-    </div>
+            <img src="img/Home Page Domain Vectors.svg" id="test2"  class="img-fluid mx-auto d-block lm" alt="Our Domains">
+            <!-- <img src="img\dark_svg\Domains.svg" id="dark-mode"  class="img-fluid mx-auto d-block dm" alt="Our Domains"> -->
+         </div>
     <div class="div3slider text-center">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/domain/Creatives Vector.svg" alt="First slide">
+            <img class="d-block w-100" id="mobview1" src="img/domain/Creatives Vector.svg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/domain/PR Vector.svg" alt="Second slide">
+            <img class="d-block w-100" id="mobview2" src="img/domain/PR Vector.svg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/domain/Sponsorship Vector.svg" alt="Third slide">
+            <img class="d-block w-100" id="mobview3" src="img/domain/Sponsorship Vector.svg" alt="Third slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/domain/Tech Vector.svg" alt="Third slide">
+            <img class="d-block w-100" id="mobview4" src="img/domain/Tech Vector.svg" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -154,14 +159,83 @@
     </div>
 </footer>
 
-
 <!-- scripts -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-<script>var typed = new Typed('.name', { strings: ["Home of Microsoft Student Partners Club SRM", ""], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
 <!-- bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- end bootstrap -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+<script>
+
+  new Darkmode().showWidget();
+
+  </script>
+  
+<script>
+  if($("#body").hasClass("darkmode--activated")){
+    $("#test").attr("src","./img/dark_svg/About Us.svg");
+    $("#test2").attr("src","./img/dark_svg/Domains.svg");
+
+    $("#mobview1").attr("src","./img/dark_svg/Cre.svg");
+    $("#mobview2").attr("src","./img/dark_svg/PR.svg");
+    $("#mobview3").attr("src","./img/dark_svg/Spon.svg");
+    $("#mobview4").attr("src","./img/dark_svg/Tech.svg");
+    $("#logo_main").attr("src","./img/dark_svg/Logo.svg");
+    
+
+  }
+  else{
+    $("#test").attr("src","./img/about_us.svg");
+    $("#test2").attr("src","./img/Home Page Domain Vectors.svg");
+
+    $("#mobview1").attr("src","./img/domain/Creatives Vector.svg");
+    $("#mobview2").attr("src","./img/domain/PR Vector.svg");
+    $("#mobview3").attr("src","./img/domain/Sponsorship Vector.svg");
+    $("#mobview4").attr("src","./img/domain/Tech Vector.svg");
+
+    $("#logo_main").attr("src","./img/logo-blue.svg");
+
+
+  }
+  
+$( ".darkmode-toggle" ).wrap( "<div class='changesvg'></div>" );
+$(".changesvg").click(function(){
+  if($("#body").hasClass("darkmode--activated")){
+    $("#test").attr("src","./img/dark_svg/About Us.svg");
+    $("#test2").attr("src","./img/dark_svg/Domains.svg");
+
+    $("#mobview1").attr("src","./img/dark_svg/Cre.svg");
+    $("#mobview2").attr("src","./img/dark_svg/PR.svg");
+    $("#mobview3").attr("src","./img/dark_svg/Spon.svg");
+    $("#mobview4").attr("src","./img/dark_svg/Tech.svg");
+    $("#logo_main").attr("src","./img/dark_svg/Logo.svg");
+ 
+
+  }
+  else{
+    $("#test").attr("src","./img/about_us.svg");
+    $("#test2").attr("src","./img/Home Page Domain Vectors.svg");
+
+    $("#mobview1").attr("src","./img/domain/Creatives Vector.svg");
+    $("#mobview2").attr("src","./img/domain/PR Vector.svg");
+    $("#mobview3").attr("src","./img/domain/Sponsorship Vector.svg");
+    $("#mobview4").attr("src","./img/domain/Tech Vector.svg");
+    $("#logo_main").attr("src","./img/logo-blue.svg");
+    
+  }
+});
+
+
+  
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script>var typed = new Typed('.name', { strings: ["Home of Microsoft Student Partners Club SRM", ""], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
+
 </body>
 </html>
