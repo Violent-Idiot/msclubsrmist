@@ -78,3 +78,9 @@ ul li:hover > a {
 ul li:first-child {
 	border-top: 2px solid #e6e6e6;
 }
+ul li.youtube:hover {
+	background-color: #FF0000;
+}
+ul li.youtube:hover .logo {
+	filter: grayscale(0%);
+}
