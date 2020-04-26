@@ -1,300 +1,315 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!DOCTYPE HTML>
+<html lang="en">
+<title>Events - Microsoft Student Partners Club SRM</title>
+<link rel="icon" href="img/logo-blue.svg" type="image type" />
 
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130200243-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-130200243-3');
-  </script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="See all the events that we have done and even those that we plan to do in the future.">
-  <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
-
-
-  <title>
-    Events | Microsoft Student Partners Club - SRMIST
-  </title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style_events.css">
-  <style>
-    p,
-    a,
-    .black-text {
-      font-family: calibri;
-      font-size: 20px;
-    }
-
-    h1,
-    h2 {
-      font-family: calibri;
-    }
-  </style>
-
+	<meta charset="UTF-8">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130200243-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-130200243-3');
+	</script>
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Organization",
+		  "url": "http://msclubsrm.in",
+		  "logo": "https://msclubsrm.com/img/logo-blue.svg"
+		}
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="See all the events that we have done and even those that we plan to do in the future.">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css\events.css" />
+	<!-- <link rel="stylesheet" href="css\darkmode.scss"> -->
 </head>
 
-<body style="background-image: url('img/Less Opacity.svg');">
-  <!--header-->
-  <nav class="white">
-    <div class="navbar-fixed">
-      <a href="index.html" class="black-text brand-logo"><img src="img/logo.png" alt="logo" style="height:50px;"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"
-          style="color: black">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a class="black-text" href="index.html">Home</a></li>
-        <li class="active teal lighten-3"><a class="black-text" href="events.html">Events</a></li>
-        <li><a class="black-text" href="gallery.html">Gallery</a></li>
-        <li><a class="black-text" href="team.html">Team</a></li>
+<body class="events_body" id="body">
+	<!-- <a class="float" name="dark_light" onclick="toggleDarkLight()" style="padding-top: 15px;" title="Toggle dark/light mode">🌛</a> -->
+	<!-- start navabr -->
+	<nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+			aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-      </ul>
-    </div>
-  </nav>
-  <ul class="sidenav white" id="mobile-demo">
-
-    <li><a class="black-text" href="index.html">Home</a></li>
-    <li class="active teal lighten-3"><a class="black-text" href="events.html">Events</a></li>
-    <li><a class="black-text" href="gallery.html">Gallery</a></li>
-    <li><a class="black-text" href="team.html">Team</a></li>
-
-  </ul>
-  <!--container starts here-->
-  <div class="container">
-    <div class="row" style="margin-top: 25px">
-      <div class="header">
-        <h1 class="center-align">Events</h1>
-      </div>
-      <!-- 2*2 cards -->
-
-        <!-- codestruck -->
-        
-      <!-- codestruck & new events-->
-      <div class="row">
-        <div class="col s12 m6">
-          <div id="mcard">
-            <div class="face face1" id="1" onclick="expand(id)">
-              <div class="card horizontal small" id="card1">
-                <div class="card-content valign-wrapper center-align">
-                  <div class="card-title center-align">Blockchain & Decentralized AI Workshop</div>
-                </div>
-              </div>
-            </div>
-            <div class="face face2" id="1x">
-              <p class="m-2"><b>13<sup>th</sup> October, 2019</b></p>
-              <div>
-                <p class="m-2" style="max-height:130px">Taken by Mr. Saksham Kukreja (Blockchain, AI, IoT and Cloud Researcher), this workshop focused on the advantages of Decentralized Blockchain and its impact on AI.</p>
-                <input type="button" value="Images" class="login-btn color3" style="position: absolute; bottom: 55px;"
-              onclick="window.location.href = 'gallery.html#oo-bcai'">
-              <input type="button" value="Certificates" class="login-btn color3" style="position: absolute; bottom: 55px; right: 3.5%; padding: 0px 32px;"
-              onclick="window.location.href = 'BCAICerts.html'">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div id="mcard">
-            <div class="face face1" id="2" onclick="expand(id)">
-              <div class="card horizontal small" id="card1">
-                <div class="card-content valign-wrapper center-align">
-                  <div class="card-title center-align">Introduction to Azure DevOps</div>
-                </div>
-              </div>
-            </div>
-            <div class="face face3" id="2x">
-              <p class="m-2"><b>13<sup>th</sup> October, 2019</b></p>
-              <p class="m-2">A Workshop on Azure DevOps, taken by Mr. Abdul Rasheed Feroz Khan, Microsoft Most Valuable Professional.</p>
-              <input type="button" value="Images" class="login-btn color4" style="position: absolute; bottom: 55px;"
-              onclick="window.location.href = 'gallery.html#oo-azure'">
-              <input type="button" value="Certificates" class="login-btn color4" style="position: absolute; bottom: 55px; right: 3.5%; padding: 0px 32px;"
-              onclick="window.location.href = 'ADCerts.html'">
-            </div>
-          </div>
-        </div>
-</div>
-        <div class="row">
-          <div class="col s12 m6">
-            <div id="mcard">
-              <div class="face face1" id="3" onclick="expand(id)">
-                <div class="card horizontal small" id="card1">
-                  <div class="card-content center-block">
-                    <span class="card-title" style="margin-top: 20%;">Application Security & Ethical Hacking</span>
-                  </div>
-                </div>
-              </div>
-              <div class="face face4" id="3x">
-                <p class="m-2"><b>12<sup>th</sup> October, 2019</b></p>
-                <p class="m-2">Taken by Mr. Shrey Gupta, Bug Bounty Hunter, complete hands-on with Burp Suite.</p>
-                <input type="button" value="Images" class="login-btn color1" style="position: absolute; bottom: 55px;"
-              onclick="window.location.href = 'gallery.html#oo-aseh'">
-              <input type="button" value="Certificates" class="login-btn color1" style="position: absolute; bottom: 55px; right: 3.5%; padding: 0px 32px;"
-              onclick="window.location.href = 'EHCerts.html'">
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div id="mcard">
-              <div class="face face1" id="4" onclick="expand(id)">
-                <div class="card horizontal small" id="card1">
-                  <div class="card-content center-block">
-                    <div class="card-title" style="margin-top: 50%;">CodeStruck 1.0</div>
-                  </div>
-                </div>
-              </div>
-              <div class="face face5" id="4x">
-                <p class="m-2"><b>17-18<sup>th</sup> &amp; 25<sup>th</sup> August, 2019</b></p>
-                <p class="m-2">The first edition of CodeStruck witnessed 1000+ students competiting with each other in online competitive coding.</p>
-                <input type="button" value="Images" class="login-btn color2" style="position: absolute; bottom: 55px;"
-              onclick="window.location.href = 'gallery.html#codestruck'">
-              <input type="button" value="Certificates" class="login-btn color2" style="position: absolute; bottom: 55px; right: 3.5%; padding: 0px 32px;"
-              onclick="window.location.href = 'Certificates.html'">
-              </div>
-            </div>
-          </div>
-      <div class="row">
-        <div class="col s12 m6">
-          <div id="mcard">
-            <div class="face face1" id="5" onclick="expand(id)">
-              <div class="card horizontal small" id="card1">
-                <div class="card-content valign-wrapper center-align">
-                  <div class="card-title center-align">Data Science and Machine Learning Basics</div>
-                </div>
-              </div>
-            </div>
-            <div class="face face2" id="5x">
-              <p class="m-2"><b>05<sup>th</sup> April, 2019</b></p>
-              <div>
-                <p class="m-2" style="max-height:130px">Data Science and ML are two intertwined topics that have really
-                  caught the imagination of tech enthusiasts.</p>
-                <input id="btn" type="button" value="Images" class="login-btn color3"
-                  style="position: absolute; bottom: 50px" onclick="window.location.href = 'gallery.html#dsml'">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div id="mcard">
-            <div class="face face1" id="6" onclick="expand(id)">
-              <div class="card horizontal small" id="card1">
-                <div class="card-content valign-wrapper center-align">
-                  <div class="card-title center-align">Interactive Coding Learning Workshop</div>
-                </div>
-              </div>
-            </div>
-            <div class="face face3" id="6x">
-              <p class="m-2"><b>06<sup>th</sup> October, 2018</b></p>
-              <p class="m-2">Join us to kick-start your dev journey from scratch to pro. Every participant will be
-                provided with a subscription to enable them to learn even after the workshop.</p>
-              <input type="button" value="Images" class="login-btn color4" style="position: absolute; bottom: 50px"
-                onclick="window.location.href = 'gallery.html#icw'">
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col s12 m6">
-            <div id="mcard">
-              <div class="face face1" id="7" onclick="expand(id)">
-                <div class="card horizontal small" id="card1">
-                  <div class="card-content center-block">
-                    <span class="card-title" style="margin-top: 40%;">MSI Campus Meet</span>
-                  </div>
-                </div>
-              </div>
-              <div class="face face4" id="7x">
-                <p class="m-2"><b>09<sup>th</sup> September, 2017</b></p>
-                <p class="m-2">Microsoft Student Partners Club, SRM University hosts MSI Gaming on 9th September at MBA Seminar Hall from
-                  11 AM to 3 PM.</p>
-                <input type="button" value="Images" class="login-btn color1" style="position: absolute; bottom: 50px"
-                  onclick="window.location.href = 'gallery.html#msi'">
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div id="mcard">
-              <div class="face face1" id="8" onclick="expand(id)">
-                <div class="card horizontal small" id="card1">
-                  <div class="card-content center-block">
-                    <div class="card-title" style="margin-top: 50%;">Imagine Talks</div>
-                  </div>
-                </div>
-              </div>
-              <div class="face face5" id="8x">
-                <p class="m-2"><b>02<sup>nd</sup> September, 2017</b></p>
-                <p class="m-2"></p>
-                <input type="button" value="Images" class="login-btn color2" style="position: absolute; bottom: 50px"
-                  onclick="window.location.href = 'gallery.html#it'">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <!-- footer starts -->
-
-  <footer class="page-footer">
-    <div class="container center-align">
-			<p>Campus WiFi might not work all the time, but Azure does. Feel free to reach out to us through whatever
-				means you see fit.</p>
-			<p>Reach out to us!</p>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav text ml-auto nav-fill w-100">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="team.html">Team</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link active" href="events.html">Events</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="gallery.html">Gallery</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<!-- <h1 class="text-center title_text" style="padding-top: 60px;">UPCOMING EVENTS</h1>
+		<div class="card up_card" style="margin-top: 70px;">
+			<div class="card-body">
+				<h5 class="title_uptext">MARCH BYTES</h5>
+				<div class="row">
+					<div class="col-md-8 order-2 order-md-1">
+						<div class="card bg-upcard" style="height:97%;">
+							<div class="card-body">
+								<p class="card-text card_body_text event-p">Join us on the 14th of March, 2020 for an
+									amazing, app-solutely fun, beginner friendly hands-on workshop on Application
+									Development using Android Studio.<br>Nurture 1.0 is being conducted by a SIIC born
+									startup- Neur Industries on 15th March, 2020. Join in to experience the power of AR
+									with Microsoft HoloLens with modules on Artificial intelligence and space technology
+									being developed just for you.</p>
+								<div class="d-flex justify-content-center" style="height: 20px;">
+									<button type="button" class="btn btn-primary upevents_btn"
+										onclick="window.location.href = 'https://msclubsrm.in/marchbytes.html'">Register
+										Now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 order-1 order-md-2">
+						<div class="text-center">
+							<a href="img\marchy.png"><img class="event-img" src="img\marchy.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<h1 class="text-center title_text" style="margin-top:10%;">PREVIOUS EVENTS</h1>
+	</div>
+	<div class="bg-event">
+	</div>
+	<div class="container">
+		<div class="main-event">
+			<div class="row" style="padding-top:2%;">
+				<!-- PREVIOUS EVENTS -->
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text" id="block">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="vr2.png" height="100px;">
+							<h5 class="card-title text-center title-pad">NURTURE 1.0</h5>
+							<h6 class="card-subtitle mb-2 text-center date-pad">15<sup>th</sup> March, 2020
+							</h6>
+							<p class="card-text text-center">Focused on the very latest- augmented and virtual realities, conducted in association with Neur industries.</p>
+							<div class="d-flex justify-content-center">
+								<button type="button" class="btn btn-primary events_btn_img_stda"
+									onclick="window.location.href = 'nurture.html';">Certificates</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text" id="block">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="android1.png" height="100px;">
+							<h5 class="card-title text-center title-pad">APPLICATION DEVELOPMENT</h5>
+							<h6 class="card-subtitle mb-2 text-center date-pad">14<sup>th</sup> March, 2020
+							</h6>
+							<p class="card-text text-center">App-solutely fun, beginner friendly hands-on workshop on Application Development using Android Studio.</p>
+							<div class="d-flex justify-content-center">
+								<button type="button" class="btn btn-primary events_btn_img_stda"
+									onclick="window.location.href = 'appdev.html';">Certificates</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text" id="block">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="img\big-data.png" height="100px;">
+							<h5 class="card-title text-center title-pad">BIG DATA ANALYTICS AND PRODUCT MODELING</h5>
+							<h6 class="card-subtitle mb-2 text-center date-pad">1<sup>st</sup> February, 2020
+							</h6>
+							<p class="card-text text-center">A trailblazing workshop which took on Data Science in a way
+								like never before. Starting from introduction and taking it all the way to numpy, pandas
+								and visualization with Seaborn. We did it all!</p>
+							<div class="d-flex justify-content-center">
+								<button type="button" class="btn btn-primary events_btn_img_stda"
+									onclick="window.location.href = 'bda.html';">Certificates</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text" id="block">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="img\Bitcoin vector.svg">
+							<h5 class="card-title text-center title-pad">BLOCKCHAIN & DECENTRAILZED AI WORKSHOP</h5>
+							<h6 class="card-subtitle mb-2    text-center date-pad">13<sup>th</sup> October, 2019
+							</h6>
+							<p class="card-text text-center">Taken by Mr. Saksham Kukreja (Blockchain, AI, IoT and Cloud
+								Researcher), this workshop focused on the advantages of Decentralized Blockchain and its
+								impact on artificial intelligence.</p>
+							<button type="button" class="btn btn-primary events_btn_img cardbtn"
+								onclick="window.location.href = 'gallery.html#blockchain';">Images</button>
+							<button type="button" class="btn btn-primary events_btn_cer cardbtn"
+								onclick="window.location.href='BCAIcertificate.html';">Certificate</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="img\Azure vector.svg">
+							<h5 class="card-title  text-center title-pad">INTRODUCTON TO AZURE DEVOPS</h5>
+							<h6 class="card-subtitle mb-2   text-center date-pad">13<sup>th</sup> October, 2019
+							</h6>
+							<p class="card-text text-center">A Workshop on Azure DevOps, taken by Mr.Abdul Rasheed Feroz
+								Khan, Microsoft Most Valuable Professional.</p>
+							<button type="button" class="btn btn-primary events_btn_img"
+								onclick="window.location.href = 'gallery.html#azure';">Images</button>
+							<button type="button" class="btn btn-primary events_btn_cer"
+								onclick="window.location.href = 'AZcertificate.html';">Certificate</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="img\App Security Vector.svg">
+							<h5 class="card-title  text-center title-pad">APPLICATION SECURITY & ETHICAL HACKING</h5>
+							<h6 class="card-subtitle mb-2    text-center date-pad">12<sup>th</sup> October, 2019
+							</h6>
+							<p class="card-text text-center">Taken by Mr. Shrey Gupta, Bug Bounty Hunter, complete
+								hands-on with Burp Suite.</p>
+							<button type="button" class="btn btn-primary events_btn_img"
+								onclick="window.location.href = 'gallery.html#hacking';">Images</button>
+							<button type="button" class="btn btn-primary events_btn_cer"
+								onclick="window.location.href = 'EHcertificate.html';">Certificate</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="img\Code struck Vector.svg">
+							<h5 class="card-title  text-center title-pad">CODESTRUCK 1.0</h5>
+							<h6 class="card-subtitle mb-2    text-center date-pad">17-18<sup>th</sup> August,
+								2019</h6>
+							<p class="card-text text-center">The first edition of CodeStruck witnessed 1000+ students
+								competiting with each other in online competitive coding.</p>
+							<div class="d-flex justify-content-center">
+								<button type="button" class="btn btn-primary events_btn_img_stda"
+									onclick="window.location.href = 'gallery.html#codestruck';">Images</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="img\DS ML vector.svg">
+							<h5 class="card-title  text-center title-pad">DATA SCIENCE AND MACHINE LEARNING BASIC</h5>
+							<h6 class="card-subtitle mb-2    text-center date-pad">02<sup>th</sup> April, 2019
+							</h6>
+							<p class="card-text text-center">Data Science and ML are two intertwined topics that have
+								really caught the imagination of tech enthusiasts.</p>
+							<div class="d-flex justify-content-center">
+								<button type="button" class="btn btn-primary events_btn_img_stda"
+									onclick="window.location.href = 'gallery.html#data';">Images</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="img\interaction vect.svg">
+							<h5 class="card-title  text-center title-pad">INTERACTIVE CODING LEARNING WORKSHOP</h5>
+							<h6 class="card-subtitle mb-2    text-center date-pad">06<sup>th</sup> October, 2018
+							</h6>
+							<p class="card-text text-center">Join us to kick-start your dev journey from scratch to pro.
+								Every participant will be provided with a subscription to enable them to learn even
+								after the workshop.</p>
+							<div class="d-flex justify-content-center">
+								<button type="button" class="btn btn-primary events_btn_img_stda cardbtn"
+									onclick="window.location.href = 'gallery.html#interactive';">Images</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="img\MSI vector.svg">
+							<h5 class="card-title  text-center title-pad">MSI CAMPUS MEET</h5>
+							<h6 class="card-subtitle mb-2    text-center date-pad">09<sup>th</sup> September,
+								2017</h6>
+							<p class="card-text text-center">Microsoft Student Partners Club, SRM University hosts MSI
+								Gaming on 9th September at MBA Seminar Hall from 11 AM to 3 PM.</p>
+							<div class="d-flex justify-content-center">
+								<button type="button" class="btn btn-primary events_btn_img_stda"
+									onclick="window.location.href = 'gallery.html#msi';">Images</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="card event_card card_body_text">
+						<div class="card-body card-bod">
+							<img class="mx-auto d-block" src="img\talk vector.svg">
+							<h5 class="card-title  text-center title-pad">IMAGINE TALKS</h5>
+							<h6 class="card-subtitle mb-2    text-center date-pad">02<sup>th</sup> September,
+								2017</h6>
+							<p class="card-text text-center"></p>
+							<div class="d-flex justify-content-center">
+								<button type="button" class="btn btn-primary events_btn_img_stda"
+									onclick="window.location.href = 'gallery.html#imagine';">Images</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="text-center container">
+			<p class="footer-text p-0 mb-0"> Contact Us</p>
 			<a href="mailto:contact@msclubsrm.in" class="tooltipped" data-position="top" data-tooltip="Mail"><img
-					src="img/envelope.svg" alt="mail"></a>
-			<img src="img/minus-horizontal-straight-line.svg">
-			<a href="https://www.facebook.com/mspcsrm" class="tooltipped" data-position="top"
+					src="img/email.svg" alt="mail"></a>
+
+			<a href="https://www.facebook.com/mspcsrm/" class="tooltipped" data-position="top"
 				data-tooltip="Facebook"><img src="img/facebook.svg" alt="fb"></a>
-			<img src="img/minus-horizontal-straight-line.svg">
-			<a href="https://www.instagram.com/mspcsrm/" class="tooltipped" data-position="top"
+
+			<a href=" https://www.instagram.com/mspcsrm/" class="tooltipped" data-position="top"
 				data-tooltip="Instagram"><img src="img/instagram.svg" alt="instagram"></a>
-			<img src="img/minus-horizontal-straight-line.svg">
+
 			<a href="https://www.linkedin.com/company/mspc-srm/" class="tooltipped" data-position="top"
 				data-tooltip="LinkedIn"><img src="img/linkedin.svg" alt="linkedin"></a>
+			<p class="footer-text p-0 mb-0">© 2020 Copyright</p>
 		</div>
-    <div class="footer-copyright center-align grey darken-3">
-      <div class="container">
-        &copy; 2019 Copyright<br />
-        <span>Developed by the Web Devs at MSTC</span>
-      </div>
-    </div>
-  </footer>
-  <!-- footer ends -->
+	</footer>
 
-
-
-
-
-
-  <!-- Footer ends-->
-  <!--scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/events.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.sidenav').sidenav();
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $('.modal').modal();
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $('.tooltipped').tooltip();
-    });
-  </script>
+	<!-- bootstrap -->
+	<script src="js\DARKMODE.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+	<script>
+		new Darkmode().showWidget();
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<!-- end bootstrap -->
 </body>
 
 </html>
